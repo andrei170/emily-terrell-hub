@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Funnel Blueprint · For Emily Terrell · AG1</title>
+<meta name="description" content="Funnel Blueprint - built for Emily Terrell by AG1 Consulting.">
+<meta name="robots" content="noindex">
+<meta property="og:title" content="Funnel Blueprint · For Emily Terrell">
+<meta property="og:description" content="Part of the funnel audit + less-than-7-day install plan built for @coachemilyterrell by AG1 Consulting.">
+<meta property="og:type" content="article">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="docs.css">
+</head>
+<body>
+
+<nav class="nav">
+  <div class="nav-inner">
+    <a href="index.html" class="nav-back"><span class="arrow">&larr;</span> Back to Hub</a>
+    <span class="nav-title">For Emily Terrell · AG1</span>
+  </div>
+</nav>
+
+<article class="doc">
+  <header class="doc-header">
+    <span class="doc-tag">Architecture</span>
+    <h1>Funnel Blueprint - Emily Terrell</h1>
+  </header>
+
+  
+<p><strong>Architecture deliverable</strong> · Full funnel diagram, phase mapping, tech stack, integration points.</p>
+<hr />
+<h2>Funnel Diagram (top to bottom)</h2>
+<pre><code>ENTRY POINTS
+├── @coachemilyterrell IG (7.6K, 1,418 posts) ─────────────────┐
+├── coachemilyterrell.com blog (active content cadence) ────────┤
+├── Conference speaking on AI for RE ───────────────────────────┤
+│   (QR code on speaker deck routes to scorecard) ───────────────┤
+└── Paid traffic - Meta + LinkedIn (Phase 4) ────────────────────┘
+                              |
+                    LINKTREE / BIO ROUTER
+                              |
+          ┌─── AI READINESS SCORECARD FOR REAL ESTATE AGENTS ───┐
+          │     (ScoreApp / Typeform, 8 questions, 4 minutes)    │
+          │     Captures email + segments by adoption stage      │
+          └──────────────────────────────┬──────────────────────┘
+                                         |
+                              ┌──────────┴──────────┐
+                              |                     |
+                     Score 71-100            Score 0-70
+                     (1:1 ready)             (Course pool)
+                              |                     |
+                     1:1 COACHING            5-TOUCH NURTURE SEQUENCE
+                     (existing path)         (Welcome flow, 10 days)
+                                                     |
+                                         AI REALTOR SYSTEM COURSE
+                                         ($497 standard / $997 with AI audit)
+                                                     |
+                                          COURSE BUYER NURTURE
+                                          (Implementation accountability)
+                                                     |
+                                          QUALIFIED 1:1 COACHING APPLICANT
+                                          (6-12 months downstream)
+                                                     |
+                                          1:1 COACHING
+                                          (existing high-touch layer)
+
+PARALLEL TRACK
+CONFERENCE SPEAKER FUNNEL:
+  Talk ends → QR slide → Scorecard opt-in → Post-event 5-touch sequence
+             → AI Realtor System invite at touch 3
+             → 1:1 coaching option at touch 5
+</code></pre>
+<h2>Phase Mapping</h2>
+<table>
+<thead>
+<tr>
+<th>Asset</th>
+<th>Phase</th>
+<th>Owner</th>
+<th>Tool</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>AI Realtor System landing page</td>
+<td>1</td>
+<td>AG1</td>
+<td>Custom HTML or Webflow</td>
+</tr>
+<tr>
+<td>VSL preview / intro video</td>
+<td>1</td>
+<td>AG1 + Emily</td>
+<td>Wistia + Riverside</td>
+</tr>
+<tr>
+<td>Stripe + payment + email auto-trigger</td>
+<td>1</td>
+<td>AG1</td>
+<td>Stripe + Kit / Kajabi</td>
+</tr>
+<tr>
+<td>Pixel + GA4 + retargeting tags</td>
+<td>1</td>
+<td>AG1</td>
+<td>Meta Pixel + GA4 + GTM</td>
+</tr>
+<tr>
+<td>AI Readiness Scorecard quiz</td>
+<td>2</td>
+<td>AG1</td>
+<td>ScoreApp or Typeform</td>
+</tr>
+<tr>
+<td>5-touch welcome + nurture sequence</td>
+<td>2</td>
+<td>AG1</td>
+<td>Kit / ConvertKit</td>
+</tr>
+<tr>
+<td>Bio-link router update</td>
+<td>2</td>
+<td>AG1</td>
+<td>Linktree Pro or Beacons</td>
+</tr>
+<tr>
+<td>Speaker QR slide template</td>
+<td>2</td>
+<td>AG1</td>
+<td>Canva Pro</td>
+</tr>
+<tr>
+<td>Post-event 5-touch email sequence</td>
+<td>2</td>
+<td>AG1</td>
+<td>Kit / ConvertKit</td>
+</tr>
+<tr>
+<td>Blog CTA updates (scorecard in-line)</td>
+<td>3</td>
+<td>AG1 + Emily</td>
+<td>coachemilyterrell.com</td>
+</tr>
+<tr>
+<td>Hook bank + content calendar</td>
+<td>3</td>
+<td>AG1 + Emily</td>
+<td>Notion + Frame.io</td>
+</tr>
+<tr>
+<td>Speaker content "From The Stage" series</td>
+<td>3</td>
+<td>AG1 + Emily</td>
+<td>Riverside + editing</td>
+</tr>
+<tr>
+<td>Meta + LinkedIn ads</td>
+<td>4</td>
+<td>AG1</td>
+<td>Meta Ads Manager + LinkedIn Campaign Manager</td>
+</tr>
+<tr>
+<td>Retargeting campaigns</td>
+<td>4</td>
+<td>AG1</td>
+<td>Meta + LinkedIn + GTM</td>
+</tr>
+</tbody>
+</table>
+<h2>Tech Stack (recommended, swappable)</h2>
+<ul>
+<li><strong>CMS / Course host:</strong> Kajabi (preferred, all-in-one) or Teachable</li>
+<li><strong>Landing pages:</strong> Custom HTML (this package) or Webflow for the course page</li>
+<li><strong>Email:</strong> Kit / ConvertKit (clean for solo creators) or Kajabi-native</li>
+<li><strong>Quiz / Scorecard:</strong> ScoreApp (preferred for scoring + segmentation) or Typeform</li>
+<li><strong>Payment:</strong> Stripe (course checkout)</li>
+<li><strong>Video host:</strong> Wistia (course intro) + YouTube (long-form content)</li>
+<li><strong>Analytics:</strong> GA4 + Meta Pixel + Microsoft Clarity (heatmaps)</li>
+<li><strong>Scheduling:</strong> Calendly (1:1 coaching bookings, already in use at coachemilyterrell.com)</li>
+<li><strong>Speaker assets:</strong> Canva Pro (QR slide templates, speaker deck updates)</li>
+<li><strong>Community (future):</strong> Skool or Circle if cohort model added downstream</li>
+</ul>
+<h2>Integration Points</h2>
+<ol>
+<li>Scorecard → Email: ScoreApp triggers Kit on quiz completion with score tag</li>
+<li>Email → Course: Kit triggers Kajabi enrolment on purchase webhook</li>
+<li>Course → 1:1 Coaching: Course graduates routed to 1:1 coaching application on completion of module 5</li>
+<li>Speaker QR → Scorecard → Post-event sequence: QR routes to scorecard; score triggers the correct post-event nurture track</li>
+<li>All events → GA4 + Meta Pixel via GTM: full funnel attribution across blog, IG, and course</li>
+<li>Blog in-line CTAs → Scorecard: updated blog posts include scorecard link at conclusion of each post</li>
+</ol>
+<h2>Owner Map</h2>
+<ul>
+<li><strong>Emily:</strong> filming (VSL intro + speaker content), course content delivery, live Q&amp;A if added, top-line decisions on copy + brand, speaking engagements</li>
+<li><strong>AG1 (Andrei):</strong> everything else - landing page build, email sequence writing, automation setup, scorecard build, speaker QR template, content production cycles, ads management, weekly reporting</li>
+</ul>
+<h2>Failure Modes + Mitigations</h2>
+<ul>
+<li><strong>Course content filming delays</strong> → use existing conference talk excerpt or IG reel as Phase 1 placeholder; replace with custom VSL by end of Phase 1</li>
+<li><strong>Speaker QR adoption</strong> → start with a single upcoming talk; test before rolling out to all events</li>
+<li><strong>Scorecard over-segmentation</strong> → start with 2 tiers (course-ready vs 1:1-ready); expand only after 500+ quiz completions</li>
+<li><strong>Blog CTA rollout</strong> → prioritise the 10 highest-traffic blog posts first; update the rest in batches</li>
+</ul>
+<h2>KPIs (90-day)</h2>
+<ul>
+<li>Phase 1: AI Realtor System landing page live, 30+ buyers in first 30 days</li>
+<li>Phase 2: 500+ scorecard completions, 8-12% IG-to-email conversion from bio-link update</li>
+<li>Phase 3: 40+ short-form posts shipped, 1 speaker series episode published</li>
+<li>Phase 4: Meta CPL under $35, ROAS 3x by week 12</li>
+<li>Year-1 floor target: $150-380K incremental on top of existing 1:1 coaching and speaking revenue</li>
+</ul>
+
+  <footer class="doc-footer">
+    <a href="index.html" class="doc-footer-link">Back to Hub</a>
+    <div class="doc-meta">Prepared 2026-04-30 &middot; Built for @coachemilyterrell</div>
+  </footer>
+</article>
+
+</body>
+</html>
